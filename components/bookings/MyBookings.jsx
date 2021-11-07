@@ -6,6 +6,7 @@ import { toast } from "react-toastify";
 import { createInvoice, download } from "easyinvoice";
 
 import { clearErrors } from "../../redux/actions/bookingActions";
+
 export const MyBookings = () => {
   const dispatch = useDispatch();
   const { bookings, error } = useSelector((state) => state.bookings);
